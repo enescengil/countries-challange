@@ -1,0 +1,99 @@
+.container{
+    max-width: 1440px;
+    width: 95%;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    .input_wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        max-width: 1440px;
+        width: 96%;
+        position: absolute;
+        .search_bar{
+            border-radius: 5px;
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 480px;
+            height: 56px;
+            padding: 0 30px;
+            input{
+                font-size: 18px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .filter_bar{
+            min-width: 200px;
+            .filter_bar_inner{
+                height: 24px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 17px 30px;
+                gap: 8px;
+                justify-content: space-between;
+            }
+        }
+    }
+    .countries_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-top: 125px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+            max-width: 320px;
+            img{
+                height: 210px;
+                min-width: 320px;
+                max-width: 320px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card_text{
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+                padding: 0px 24px;
+                padding-bottom: 42px;
+                .title{
+                    color: #121214;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    color: #121214;
+                    font-weight: 500;
+                    span{
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 740px) {
+    .countries_wrapper{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 175px!important;
+        img{
+            width: 100%;
+        }
+    }
+}

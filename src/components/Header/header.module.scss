@@ -1,0 +1,35 @@
+.header{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    .header_inner{
+        max-width: 1440px;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .btn{
+            user-select: none;
+            color: #121214;
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 18px!important;
+    }
+    .btn{
+        font-size: 16px!important;
+    }
+}
