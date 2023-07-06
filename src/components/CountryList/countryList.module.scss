@@ -1,6 +1,6 @@
 .container{
-    max-width: 1440px;
-    width: 95%;
+    max-width: 1280px;
+    width: 96%;
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +9,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 24px;
-        max-width: 1440px;
+        max-width: 1280px;
         width: 96%;
         position: absolute;
         .search_bar{
@@ -45,6 +45,7 @@
     .countries_wrapper{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 50px;
         padding-top: 125px;
         .card{
@@ -53,11 +54,11 @@
             gap: 26px;
             border-radius: 10px;
             box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
-            max-width: 320px;
+            max-width: 275px;
             img{
                 height: 210px;
-                min-width: 320px;
-                max-width: 320px;
+                min-width: 275px;
+                max-width: 275px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
             }
@@ -86,11 +87,11 @@
         }
     }
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 850px) {
     .countries_wrapper{
         width: auto;
         display: flex;
-        justify-content: center;
+        justify-content: center!important;
         padding-top: 175px!important;
         img{
             width: 100%;
